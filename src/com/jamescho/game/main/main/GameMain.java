@@ -1,4 +1,4 @@
-package com.jamescho.game.main;
+package com.jamescho.game.main.main;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,8 +8,8 @@ import java.awt.*;
  */
 public class GameMain {
     private static final String GAME_TITLE = "Java Game Development Framework";
-    public static final int GAME_WIDTH= 800;
-    public static final int GAME_HEIGHT = 450;
+    public static final int GAME_WIDTH = 800;
+    public static final int GAME_HEIGHT = 800;
     public static Game sGame;
 
     public static void main(String[] args) {
@@ -45,17 +45,16 @@ class CrappyPanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        g.setColor(Color.BLUE);
-        g.fillRect(0,0,100,100);
-
-        g.setColor(Color.GREEN);
-        g.drawRect(50,50,100,100);
-
         g.setColor(Color.RED);
-        g.drawString("Hello World!", 200, 200);
+        g.drawString("Hello World!", 400, 200);
 
-        g.setColor(Color.black);
-        g.fillOval(250,40,100,30);
+        g.setColor(Color.darkGray);
+        g.fillOval(350,350,100,100);
+
+        g.setColor(Color.white);
+        g.fillRect(300, 300, 200, 200);
+        g.setColor(Color.darkGray);
+        g.fillOval(350,350,100,100);
     }
 }
 
